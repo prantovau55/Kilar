@@ -12,7 +12,7 @@ class CardRequest(BaseModel):
 
 class GenRequest(BaseModel):
     bin_number: str
-    quantity: Optional[int] = 5
+    quantity: int = 5
 
 def luhn_check(card_num: str) -> bool:
     total = 0
